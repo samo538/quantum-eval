@@ -1,0 +1,16 @@
+# $1 = original circuit, $2 = circuit to compare with
+
+sliqec:
+  cmd: ../bin/eq/sliqec-eq-wrap.sh $1 $2
+
+feynman:
+  cmd: ../bin/eq/feynman-eq-wrap.sh $1 $2
+
+autoq:
+  cmd: ../bin/eq/autoq-eq-wrap.sh $1 $2
+
+qcec:
+  cmd: ../bin/eq/qcec-eq-wrap.sh $1 $2
+
+quokka:
+  cmd: ../bin/eq/quokka-eq-wrap.sh $1 $2
