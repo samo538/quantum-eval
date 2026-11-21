@@ -96,6 +96,25 @@ medusa-motobuddy-inline-lto-f80-loop:
 medusa-motobuddy-inline-lto-f128-loop:
   cmd: ../bin/medusa-motobuddy-opt-wrap.sh -v inline-lto -s -p f128 $1
 
+# ACN branch (samo538/MEDUSA ACN-algebraic-representation): mpz vs acn leaves, same commit
+medusa-acn-mpz-base:
+  cmd: ../bin/medusa-acn-wrap.sh -l mpz $1
+
+medusa-acn-mpz-loop:
+  cmd: ../bin/medusa-acn-wrap.sh -l mpz -s $1
+
+medusa-acn-n4-base:
+  cmd: ../bin/medusa-acn-wrap.sh -l acn4 $1
+
+medusa-acn-n4-loop:
+  cmd: ../bin/medusa-acn-wrap.sh -l acn4 -s $1
+
+medusa-acn-n8-base:
+  cmd: ../bin/medusa-acn-wrap.sh -l acn8 $1
+
+medusa-acn-n8-loop:
+  cmd: ../bin/medusa-acn-wrap.sh -l acn8 -s $1
+
 medusa-stabilizer-base:
   cmd: ../bin/medusa-stabilizer-wrap.sh $1
 
